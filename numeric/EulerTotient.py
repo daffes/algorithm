@@ -1,6 +1,11 @@
 from Primes import primeFactors
 
 def eulerTotient(n):
+    """
+    Returns number of coprimes of n, gcd(n, x) == 1 : 1 <= x <= n.
+    Complexity: O(sqrt(n))
+    Test: SRM 617 Div 2 Hard
+    """
     primes = list(set(primeFactors(n)))
     for p in primes:
         n -= n/p

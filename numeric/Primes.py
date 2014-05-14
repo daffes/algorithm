@@ -1,4 +1,9 @@
 def primeFactors(n):
+    """
+    Returns all prime factors of n
+    Complexity: O(sqrt(n))
+    Test: SRM 617 Div 2 Hard
+    """
     i = 2
     while i * i <= n:
         while n % i == 0:
@@ -18,4 +23,3 @@ class Test(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
