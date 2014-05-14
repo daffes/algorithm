@@ -13,6 +13,8 @@ class Test(unittest.TestCase):
     def testPrimeFactors(self):
         primes = list(primeFactors(2 * 3 * 11 * 7 * 7 * 19))
         self.assertEqual(primes, [2, 3, 7, 7, 11, 19])
+        primes = list(primeFactors(1))
+        self.assertEqual(primes, [])
 
 if __name__ == '__main__':
     unittest.main()
